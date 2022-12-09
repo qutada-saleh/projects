@@ -68,6 +68,7 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
     <Property Name="South" Type="int" Nullable="false" />
     <Property Name="East" Type="float" Nullable="false" />
     <Property Name="West" Type="float" Nullable="false" />
+    <Property Name="prid" Type="int" />
   </EntityType>
   <EntityContainer Name="ExpertSystemModelStoreContainer">
     <EntitySet Name="Attributes" EntityType="Self.Attributes" Schema="dbo" store:Type="Tables" />
@@ -76,7 +77,8 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
     [Price].[North] AS [North], 
     [Price].[South] AS [South], 
     [Price].[East] AS [East], 
-    [Price].[West] AS [West]
+    [Price].[West] AS [West], 
+    [Price].[prid] AS [prid]
     FROM [dbo].[Price] AS [Price]</DefiningQuery>
     </EntitySet>
   </EntityContainer>

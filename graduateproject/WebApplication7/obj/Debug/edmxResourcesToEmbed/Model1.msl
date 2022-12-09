@@ -64,6 +64,7 @@
           <ScalarProperty Name="South" ColumnName="South" />
           <ScalarProperty Name="East" ColumnName="East" />
           <ScalarProperty Name="West" ColumnName="West" />
+          <ScalarProperty Name="prid" ColumnName="prid" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -18,5 +18,6 @@ namespace WebApplication7
         public int South { get; set; }
         public double East { get; set; }
         public double West { get; set; }
+        public Nullable<int> prid { get; set; }
     }
 }

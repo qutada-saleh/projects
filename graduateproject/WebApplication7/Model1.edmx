@@ -73,6 +73,7 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
           <Property Name="South" Type="int" Nullable="false" />
           <Property Name="East" Type="float" Nullable="false" />
           <Property Name="West" Type="float" Nullable="false" />
+          <Property Name="prid" Type="int" />
         </EntityType>
         <EntityContainer Name="ExpertSystemModelStoreContainer">
           <EntitySet Name="Attributes" EntityType="Self.Attributes" Schema="dbo" store:Type="Tables" />
@@ -81,7 +82,8 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
     [Price].[North] AS [North], 
     [Price].[South] AS [South], 
     [Price].[East] AS [East], 
-    [Price].[West] AS [West]
+    [Price].[West] AS [West], 
+    [Price].[prid] AS [prid]
     FROM [dbo].[Price] AS [Price]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
@@ -156,6 +158,7 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
           <Property Name="South" Type="Int32" Nullable="false" />
           <Property Name="East" Type="Double" Nullable="false" />
           <Property Name="West" Type="Double" Nullable="false" />
+          <Property Name="prid" Type="Int32" />
         </EntityType>
         <EntityContainer Name="ExpertSystemEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Attributes" EntityType="Self.Attributes" />
@@ -230,6 +233,7 @@ warning 6002: The table/view 'ExpertSystem.dbo.Price' does not have a primary ke
                 <ScalarProperty Name="South" ColumnName="South" />
                 <ScalarProperty Name="East" ColumnName="East" />
                 <ScalarProperty Name="West" ColumnName="West" />
+                <ScalarProperty Name="prid" ColumnName="prid" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

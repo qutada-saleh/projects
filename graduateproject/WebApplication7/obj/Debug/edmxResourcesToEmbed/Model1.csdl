@@ -66,6 +66,7 @@
     <Property Name="South" Type="Int32" Nullable="false" />
     <Property Name="East" Type="Double" Nullable="false" />
     <Property Name="West" Type="Double" Nullable="false" />
+    <Property Name="prid" Type="Int32" />
   </EntityType>
   <EntityContainer Name="ExpertSystemEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Attributes" EntityType="Self.Attributes" />
