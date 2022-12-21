@@ -86,3 +86,4 @@ C:\Users\hp\source\repos\graduateproject\WebApplication7\bin\System.Web.WebPages
 C:\Users\hp\source\repos\graduateproject\WebApplication7\bin\Antlr3.Runtime.pdb
 C:\Users\hp\source\repos\graduateproject\WebApplication7\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\hp\source\repos\graduateproject\WebApplication7\obj\Debug\Expertsystem.csproj.CopyComplete
+C:\Users\hp\source\repos\graduateproject\WebApplication7\obj\Debug\Expertsystem.csproj.AssemblyReference.cache

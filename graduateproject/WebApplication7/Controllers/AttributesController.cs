@@ -9,12 +9,12 @@ namespace WebApplication7.Controllers
 {
     public class Attributes : ApiController
     {
-
+        [HttpGet]
         public IEnumerable<Attributes> Get(string permit ,string quality, string health, string material, string slope,
             string landtype, string withinf
             , string landlocation, string rent, string elevator, string floor, string park
             , string propertycontract, string rebound
-            , string pavedstreet, string streetype, string vitalcenter, string services, int streetnumber ,string prices, int id, int pid)
+            , string pavedstreet, string streetype, string vitalcenter, string services, string streetnumber ,string prices, int id, int pid)
         {
             //withoutf delete
             using (ExpertSystemEntities entities = new ExpertSystemEntities())
@@ -814,6 +814,13 @@ namespace WebApplication7.Controllers
             }
         }
 
-       
+        public IEnumerable<Attributes> Get()
+        {
+            using (ExpertSystemEntities entities = new ExpertSystemEntities())
+            {
+                return (IEnumerable<Attributes>)entities.Attributes.ToList();
+            }
+               
+        }
     }
 }
